@@ -1,0 +1,124 @@
+
+:root{
+    --first-color: #fff;
+    --second-color: #596c54;
+    --text-font:  'Times New Roman';
+    --text-color: #aeaeae;
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe4c8;
+    height: 100dvh;
+   
+}
+
+.main-card{
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    display: flex;
+    
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.image{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: url('image-product-desktop.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.image,.description{
+    width: 50%;
+    height: 100%;
+    background-color: var(--first-color);
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+button{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    font-size: 17px;
+    
+}
+.card{
+    width: 20px;
+    height: 18px;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.price{
+    color: var(--second-color);
+    font-size: 30px;
+}
+.prices span{
+    text-decoration: line-through;
+}
+.title{
+    font-size: 30px;
+}
+span{
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+strong{
+    font-family: var(--text-font);
+}
+p{
+    color: var(--text-color);
+}
+@media screen and (max-width:560px){
+    .main-card{
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        height: 560px;
+    }
+    .image{
+        background: transparent url('image-product-mobile.jpg') no-repeat center no-repeat center;
+        
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+        height: 200px;
+    }
+    .description{
+        width: 100%;
+        height: 350px;
+        padding: 20px;
+        gap: 18px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+}
